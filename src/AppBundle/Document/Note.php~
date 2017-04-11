@@ -1,0 +1,43 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Giansalex
+ * Date: 09/04/2017
+ * Time: 17:03
+ */
+
+namespace AppBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\Document
+ */
+class Note
+{
+    /**
+     * @MongoDB\Id
+     * @var string
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\Field(type="string")
+     * @var string
+     */
+    protected $title;
+
+    /**
+     * @MongoDB\Field(type="string")
+     * @var string
+     */
+    protected $value;
+
+    /**
+     * @MongoDB\Field(type="string")
+     * @var string
+     */
+    protected $color;
+
+
+}
